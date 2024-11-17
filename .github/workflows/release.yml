@@ -22,8 +22,6 @@ jobs:
       # semantic-release는 Node.js 기반이므로 Node.js 설치
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with:
-          node-version: '18'
           
       # semantic-release 관련 npm 패키지 설치
       # @semantic-release/git: 깃 커밋/태그 자동화
