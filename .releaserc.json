@@ -1,0 +1,33 @@
+{
+  // main 브랜치에서만 릴리즈 수행
+  "branches": ["main"],
+  
+  // 사용할 플러그인 설정
+  "plugins": [
+    // 커밋 메시지 분석하여 버전 결정
+    "@semantic-release/commit-analyzer",
+    
+    // 릴리즈 노트 생성
+    "@semantic-release/release-notes-generator",
+    
+    // CHANGELOG.md 파일 생성/업데이트
+    "@semantic-release/changelog",
+    
+    // 변경된 파일 자동 커밋
+    "@semantic-release/git",
+    
+    // GitHub 릴리즈 생성 및 자산 업로드
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            // 빌드된 JAR 파일을 릴리즈에 첨부
+            "path": "build/libs/*.jar",
+            "label": "Spring Boot JAR"
+          }
+        ]
+      }
+    ]
+  ]
+}
