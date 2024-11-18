@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/student-p/test/compare/v1.0.0...v1.0.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* hello 문자를 화면에 출력하도록 수정 ([e226099](https://github.com/student-p/test/commit/e2260994c27e1af46dacf45d6d66b9a5df6bedf9))
+
 # 1.0.0 (2024-11-18)
 
 
