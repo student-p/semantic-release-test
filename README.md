@@ -9,10 +9,12 @@
 
 - [github token 발급 링크](https://github.com/settings/tokens) 를 클릭해서 repo, workflow, write:packages 의 권한을 가진 github token을 발급받는다.
 - 발급 받은 토큰을 복사해 semantic-release를 적용해줄 repository의 Settings > Secrets and variables > Actions 메뉴에 들어간다.
+
 ![토큰 설정 이미지1](https://github.com/user-attachments/assets/ac00b939-871e-4634-9780-c36da0b8d46d)
 ![토큰 설정 이미지2](https://github.com/user-attachments/assets/6be149b3-89b8-4aff-a575-f248e01de675)
 ![토큰 설정 이미지3](https://github.com/user-attachments/assets/6de2b5b1-5b2c-4b47-9696-d9e78b051da3)
-- epository secret을 생성해주는데 이때 반드시 Name을 GH_TOKEN이라고 작성해야한다.
+
+- repository secret을 생성해주는데 이때 반드시 Name을 GH_TOKEN이라고 작성해야한다.
 Secret에는 복사해준 토큰을 붙여넣어 준다.
 
 ## release.yml 작성
